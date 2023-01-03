@@ -32,9 +32,9 @@ const Showcase = () => {
 
 
     return (
-        <section className='w-full px-[5rem] py-[10rem]'>
-            <div className='grid grid-cols-[1.3fr_1fr]'>
-                <div className='flex flex-col text-9xl font-bold'>
+        <section className='w-full px-3 md:px-8 xl:px-[5rem] py-[10rem]'>
+            <div className='grid grid-cols-1 md:grid-cols-[1.1fr_1fr]'>
+                <div className='flex flex-col text-6xl md:text-7xl xl:text-9xl font-bold'>
                     <h2>Produk</h2>
                     <h2>Showcase</h2>
                     <motion.div
@@ -74,11 +74,10 @@ const Showcase = () => {
                 modules={[Pagination, Navigation]}
                 className="h-[70vh] w-full my-[5rem]"
             >
-                <SwiperSlide className='flex justify-center items-center px-[5rem]'>
+                <SwiperSlide>
                     <SlideItem
-                        title1='How'
                         image='/nutanix.png'
-                        title2='Works?'
+                        title2='How It Works?'
                         showVideo={showVideo}
                         setShowVideo={setShowVideo}
                         state='1'

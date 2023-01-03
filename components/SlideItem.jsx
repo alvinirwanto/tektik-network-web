@@ -7,16 +7,16 @@ import { BsPlayCircleFill } from 'react-icons/bs'
 
 const SlideItem = ({title1, image, title2, showVideo, setShowVideo, state}) => {
     return (
-        <div className='w-full py-[5rem] px-[5rem] grid grid-cols-2 place-items-center'>
-            <div className='flex flex-col gap-6 max-w-[500px] items-start mx-auto'>
-                <p className='text-6xl font-bold'>{title1}</p>
+        <div className='w-full py-[5rem] px-3 md:px-6 xl:px-[5rem] grid grid-cols-1 gap-5 md:grid-cols-2 place-items-center'>
+            <div className='flex flex-col gap-3 md:gap-6 max-w-[500px] items-start w-full mx-auto'>
+                <p className='text-3xl md:text-4xl xl:text-6xl font-bold'>{title1}</p>
                 <Image
                     src={image}
                     width={1000}
                     height={1000}
-                    className='object-contain w-auto h-[3rem]'
+                    className='object-contain w-auto h-7 xl:h-[3rem]'
                 />
-                <p className='text-6xl font-bold'>{title2}</p>
+                <p className='text-3xl md:text-4xl xl:text-6xl font-bold'>{title2}</p>
             </div>
 
             <div className='w-full aspect-video bg-black flex justify-center items-center'>

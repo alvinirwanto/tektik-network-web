@@ -55,7 +55,7 @@ const RekanKerja = () => {
                     variants={staggerAnimation()}
                     initial='hidden'
                     whileInView='show'
-                    className='w-full xl:w-[80vw] grid grid-cols-5 gap-[5rem] items-center justify-evenly md:justify-between mt-[7rem] md:mt-[5rem]'>
+                    className='w-full xl:w-[80vw] grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-[5rem] items-center justify-evenly md:justify-between mt-[7rem] md:mt-[5rem]'>
 
                     <motion.div
                         variants={staggerItems('up')}

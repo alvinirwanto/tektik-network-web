@@ -109,7 +109,7 @@ const Navbar = () => {
                     spy={true}
                     className='cursor-pointer hover:opacity-60'
                 >
-                    Tentang
+                    Rekan Kerja
                 </Link>
 
                 <Link
@@ -122,32 +122,7 @@ const Navbar = () => {
                     spy={true}
                     className='cursor-pointer hover:opacity-60'
                 >
-                    Klien
-                </Link>
-
-                <Link
-                    onClick={handleClick}
-                    to="bisnis-unit"
-                    offset={-100}
-                    smooth={true}
-                    duration={500}
-                    activeClass='active'
-                    spy={true}
-                    className='cursor-pointer hover:opacity-60'
-                >
-                    Bisnis Unit
-                </Link>
-
-                <Link
-                    onClick={handleClick}
-                    to="footer"
-                    offset={-50}
-                    smooth={true}
-                    duration={500}
-                    activeClass='active'
-                    spy={true}
-                    className='px-8 py-2 bg-black text-white'>
-                    Kontak
+                    Produk
                 </Link>
             </div>
 

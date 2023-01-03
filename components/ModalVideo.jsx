@@ -12,7 +12,7 @@ const ModalVideo = ({ showVideo, setShowVideo, videoLink }) => {
     }
 
     return (
-        <div className="flex items-start gap-4 w-[70%]">
+        <div className="flex items-start gap-4 w-[80%] md:w-[80%] xl:w-[70%]">
             <video ref={vidRef} controls className="w-full aspect-video">
                 <source src={videoLink} type="video/mp4" />
             </video>

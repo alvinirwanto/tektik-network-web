@@ -33,7 +33,7 @@ body {
 
 @layer components {
   .card {
-    @apply col-span-3 p-8 border-2 cursor-pointer border-black shadow-[0.5rem_0.5rem_0rem_#000] hover:shadow-none duration-700 h-[15rem] flex justify-start items-center;
+    @apply col-span-6 md:col-span-3 p-8 border-2 cursor-pointer border-black shadow-[0.5rem_0.5rem_0rem_#000] hover:shadow-none duration-700 h-[15rem] flex justify-start items-center;
   }
 
   .card h3 {
@@ -45,7 +45,7 @@ body {
   }
 
   .active {
-    @apply col-span-6 order-1 duration-700 grid grid-cols-[1fr_2fr] gap-[3rem] items-start h-full cursor-default;
+    @apply col-span-6 md:order-1 duration-700 grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-[3rem] items-start h-full cursor-default;
   }
 
   .active p {
@@ -53,11 +53,11 @@ body {
   }
 
   .active h3 {
-    @apply text-6xl;
+    @apply text-3xl md:text-4xl xl:text-6xl;
   }
 
   .in-active {
-    @apply col-span-2 order-last duration-700;
+    @apply col-span-6 md:col-span-2 md:order-last duration-700;
   }
 
   .show-modal {
