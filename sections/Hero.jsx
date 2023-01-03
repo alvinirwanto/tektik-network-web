@@ -5,7 +5,7 @@ import { slideIn, showText, staggerAnimation, staggerItems } from '../utils/moti
 
 import { HiArrowLongDown } from 'react-icons/hi2'
 
-import HeroImg from '../public/dummy.jpeg'
+import HeroImg from '../public/main-foto.jpg'
 
 const Hero = () => {
     return (
@@ -47,7 +47,9 @@ const Hero = () => {
             </div>
             <div className='w-full mt-[5rem]'>
                 <Image
-                    src={HeroImg}
+                    src='/main-foto.jpg'
+                    width={1000}
+                    height={1000}
                     className='object-contain w-full h-auto'
                 />
             </div>
@@ -84,13 +86,15 @@ const Hero = () => {
                             className='h-5 aspect-square bg-network-color hover:opacity-50' />
                     </motion.div>
                 </div>
-                
+
                 <div className='col-start-1 col-end-13 md:col-start-7 md:col-end-12 md:grid-rows-1 md:row-start-1 relative md:shadow-custom md:-mt-[5rem]'>
                     <Image
-                        src={HeroImg}
-                        className='object-cover h-full md:h-[20rem] xl:h-[35rem]'
+                        src='/main-foto-2.jpg'
+                        width={2000}
+                        height={2000}
+                        className='object-cover object-right-top h-full md:h-[20rem] xl:h-[35rem]'
                     />
-                    <div className='w-full h-full absolute top-0 bg-gradient-to-r from-[#fefefe] to-transparent' />
+                    <div className='w-full h-full absolute top-0 bg-gradient-to-r from-[#fefefe98] to-transparent' />
                 </div>
             </div>
         </section>

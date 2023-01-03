@@ -34,7 +34,7 @@ const Showcase = () => {
     return (
         <section className='w-full px-3 md:px-8 xl:px-[5rem] py-[10rem]'>
             <div className='grid grid-cols-1 md:grid-cols-[1.1fr_1fr]'>
-                <div className='flex flex-col text-6xl md:text-7xl xl:text-9xl font-bold'>
+                <div className='flex flex-col text-6xl md:text-7xl xl:text-8xl font-bold'>
                     <h2>Produk</h2>
                     <h2>Showcase</h2>
                     <motion.div
