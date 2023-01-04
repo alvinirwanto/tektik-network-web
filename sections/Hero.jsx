@@ -97,8 +97,8 @@ const Hero = () => {
                     <div className='w-full h-full absolute top-0 bg-gradient-to-r from-[#fefefe98] to-transparent' />
                 </div>
             </div>
-            <div className='grid grid-cols-[1fr_2fr] pt-[20rem] place-items-center'>
-                <div>
+            <div className='grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 xl:pt-[20rem] place-items-center'>
+                <div className='order-2 md:order-1'>
                     <Image
                         src='/main-foto-3.jpg'
                         width={2000}
@@ -106,7 +106,7 @@ const Hero = () => {
                         className='object-cover object-left-top h-full'
                     />
                 </div>
-                <div className='flex flex-col gap-8 text-4xl xl:max-w-[700px] mx-auto font-semibold'>
+                <div className='flex flex-col gap-8 text-2xl order-1 md:order-2 md:text-4xl xl:max-w-[700px] mx-auto font-semibold'>
                     <p>Tektik hadir guna menjawab berbagai macam kebutuhan informasi dan teknologi yang tidak pernah berhenti berkembang.</p>
                     <motion.div
                         variants={staggerAnimation()}
