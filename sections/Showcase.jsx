@@ -35,8 +35,22 @@ const Showcase = () => {
         <section className='w-full px-3 md:px-8 xl:px-[5rem] py-[10rem]'>
             <div className='grid grid-cols-1 md:grid-cols-[1.1fr_1fr]'>
                 <div className='flex flex-col text-6xl md:text-7xl xl:text-8xl font-bold'>
-                    <h2>Produk</h2>
-                    <h2>Showcase</h2>
+                    <div className="overflow-hidden">
+                        <motion.h2
+                            variants={slideIn('up', 0.3, 0.5)}
+                            initial='hidden'
+                            whileInView='show'
+                            viewport={{ once: true }}
+                        >Produk</motion.h2>
+                    </div>
+                    <div className="overflow-hidden">
+                        <motion.h2
+                            variants={slideIn('up', 0.3, 0.5)}
+                            initial='hidden'
+                            whileInView='show'
+                            viewport={{ once: true }}
+                        >Showcase</motion.h2>
+                    </div>
                     <motion.div
                         variants={staggerAnimation()}
                         initial='hidden'
@@ -77,7 +91,7 @@ const Showcase = () => {
                 <SwiperSlide>
                     <SlideItem
                         image='/nutanix.png'
-                        title2='How It Works?'
+                        title2='Kami membantu Anda menyederhanakan kompleksitas cloud dengan platform multicloud hybrid yang ditentukan perangkat lunak, sehingga Anda dapat berfokus pada hasil bisnis dan inovasi baru.'
                         showVideo={showVideo}
                         setShowVideo={setShowVideo}
                         state='1'
@@ -86,25 +100,25 @@ const Showcase = () => {
                 <SwiperSlide>
                     <SlideItem
                         image='/h3c.png'
-                        title2='High End Router CR16K'
+                        title2='H3C CR16000-F sebagai router kelas atas, berfokus pada Carriers Backbone/MAN dan Jaringan Inti Industri Skala Besar, memberikan kinerja penerusan yang tinggi, port dengan kepadatan tinggi, dan jenis port yang kaya.'
                         showVideo={showVideo}
                         setShowVideo={setShowVideo}
                         state='2'
                     />
                 </SwiperSlide>
                 <SwiperSlide>
-                <SlideItem
+                    <SlideItem
                         image='/sangfor.png'
-                        title2='Cyber Command'
+                        title2='Cyber ​​Command dapat dipercaya untuk meningkatkan keseluruhan keamanan TI perusahaan Anda sekaligus menghilangkan potensi risiko keamanan siber.'
                         showVideo={showVideo}
                         setShowVideo={setShowVideo}
                         state='3'
                     />
                 </SwiperSlide>
                 <SwiperSlide>
-                <SlideItem
+                    <SlideItem
                         image='/sangfor.png'
-                        title2='SASE & Sangfor Access'
+                        title2='Guna meningkatkan produktivitas, pengguna jarak jauh kantor cabang dapat menghubungkan aplikasi bisnis ke pusat data atau SaaS Anda, tanpa mengalihkan semua lalu lintas melalui kantor pusat, menurunkan biaya bandwidth, dan meningkatkan pengalaman pengguna.'
                         showVideo={showVideo}
                         setShowVideo={setShowVideo}
                         state='4'

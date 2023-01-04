@@ -77,7 +77,7 @@ export const staggerAnimation = () => ({
     show: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.3
+            staggerChildren: 0.1
         }
     }
 })

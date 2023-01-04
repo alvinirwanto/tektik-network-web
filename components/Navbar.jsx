@@ -83,6 +83,15 @@ const Navbar = () => {
                     Produk
                 </Link>
 
+                <Link
+                    to="footer"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    className='px-8 py-2 bg-black text-white cursor-pointer hover:opacity-60'>
+                    Kontak
+                </Link>
+
             </div>
 
 
@@ -123,6 +132,15 @@ const Navbar = () => {
                     className='cursor-pointer hover:opacity-60'
                 >
                     Produk
+                </Link>
+
+                <Link
+                    to="footer"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    className='px-8 py-2 bg-black text-white cursor-pointer hover:opacity-60'>
+                    Kontak
                 </Link>
             </div>
 

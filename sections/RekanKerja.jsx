@@ -45,9 +45,10 @@ const RekanKerja = () => {
             <div className='flex flex-col items-center'>
                 <div className='overflow-hidden'>
                     <motion.h2
-                        variants={showText(0.5, 0.5)}
+                        variants={showText(0.2, 0.5)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='text-3xl xl:text-2xl font-semibold text-center'>Rekan Kerja Kami</motion.h2>
                 </div>
 
@@ -55,6 +56,7 @@ const RekanKerja = () => {
                     variants={staggerAnimation()}
                     initial='hidden'
                     whileInView='show'
+                    viewport={{ once: true }}
                     className='w-full xl:w-[80vw] grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-[5rem] items-center justify-evenly md:justify-between mt-[7rem] md:mt-[5rem]'>
 
                     <motion.div
