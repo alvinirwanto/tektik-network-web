@@ -97,6 +97,43 @@ const Hero = () => {
                     <div className='w-full h-full absolute top-0 bg-gradient-to-r from-[#fefefe98] to-transparent' />
                 </div>
             </div>
+            <div className='grid grid-cols-[1fr_2fr] pt-[20rem] place-items-center'>
+                <div>
+                    <Image
+                        src='/main-foto-3.jpg'
+                        width={2000}
+                        height={2000}
+                        className='object-cover object-left-top h-full'
+                    />
+                </div>
+                <div className='flex flex-col gap-8 text-4xl xl:max-w-[700px] mx-auto font-semibold'>
+                    <p>Tektik hadir guna menjawab berbagai macam kebutuhan informasi dan teknologi yang tidak pernah berhenti berkembang.</p>
+                    <motion.div
+                        variants={staggerAnimation()}
+                        initial='hidden'
+                        whileInView='show'
+                        className='flex gap-4 self-end'>
+                        <motion.div
+                            variants={staggerItems('right')}
+                            className='h-5 aspect-square bg-network-color hover:opacity-50' />
+                        <motion.div
+                            variants={staggerItems('right')}
+                            className='h-5 aspect-square bg-network-color hover:opacity-50' />
+                        <motion.div
+                            variants={staggerItems('right')}
+                            className='h-5 aspect-square bg-network-color hover:opacity-50' />
+                        <motion.div
+                            variants={staggerItems('right')}
+                            className='h-5 aspect-square bg-network-color hover:opacity-50' />
+                        <motion.div
+                            variants={staggerItems('right')}
+                            className='h-5 aspect-square bg-network-color hover:opacity-50' />
+                        <motion.div
+                            variants={staggerItems('right')}
+                            className='h-5 aspect-square bg-network-color hover:opacity-50' />
+                    </motion.div>
+                </div>
+            </div>
         </section>
     )
 }
